@@ -50,3 +50,12 @@ streamlit run RAG.py
 ## 🤝 Contributions
 Feel free to fork the repository and contribute!
 
+---
+## Contact
+For questions or feedback, feel free to open an issue or reach out to [NASO7Y](https://github.com/NASO7Y).
+
+
+Email: ahmed.noshy2004@gmail.com
+
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/nos7y/)
+
