@@ -48,7 +48,7 @@ streamlit run RAG.py
 5. The results are displayed in a **user-friendly Streamlit UI**.
 
 ## 🤝 Contributions
-We welcome contributions! Feel free to fork the repository, submit issues, or create pull requests.
+Any contributions are welcome, Feel free to fork the repository, submit issues, or create pull requests.
 
 ## 📬 Contact
 For questions or feedback, feel free to open an issue or reach out to me:
