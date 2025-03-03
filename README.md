@@ -17,11 +17,12 @@ Ensure you have **Python 3.8+** installed and all required dependencies.
 
 ## Screenshots
 
+### Retrieved Context
+![Retrieved Context](./retreived.png)
 ### AI-Generated Answer
 ![AI Answer](./ai%20answer.png)
 
-### Retrieved Context
-![Retrieved Context](./retreived.png)
+------
 ### Clone the Repository
 ```bash
 git clone https://github.com/NASO7Y/RAG-PDF-Search.git
