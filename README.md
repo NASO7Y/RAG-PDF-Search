@@ -1,61 +1,62 @@
 # RAG-PDF-Search
 
 ## 📌 Overview
-**RAG-PDF-Search** is a **Retrieval-Augmented Generation (RAG) application** built with **Streamlit**, designed for efficient searching within PDF documents. It leverages **Ollama** and **DeepSeek R1** to provide intelligent, context-aware responses based on document content. The application supports **Arabic text processing** and delivers concise answers to user queries.
+**RAG-PDF-Search** is a **Retrieval-Augmented Generation (RAG) application** built with **Streamlit**, designed for intelligent searching within PDF documents. By leveraging **Ollama** and **DeepSeek R1**, it provides highly relevant, context-aware responses based on document content. The application also supports **Arabic text processing** and delivers concise answers to user queries.
 
 ## 🚀 Features
-- 📂 **Upload and search within PDFs** effortlessly.
+- 📂 **Upload and search within PDFs** with ease.
 - 🧠 **AI-powered responses** using DeepSeek R1 via Ollama.
-- 🔍 **Efficient document retrieval** with FAISS-based vector search.
-- 📚 **Advanced text chunking** for better semantic understanding.
-- 🌍 **Supports Arabic and multilingual processing**.
-- ⚡ **Fast and interactive UI** using Streamlit.
+- 🔍 **Efficient document retrieval** powered by FAISS-based vector search.
+- 📚 **Advanced text chunking** for enhanced semantic understanding.
+- 🌍 **Multilingual and Arabic text support** for diverse use cases.
+- ⚡ **Fast and interactive UI** built with Streamlit.
 
 ## 🛠️ Installation & Setup
 ### Prerequisites
-Ensure you have **Python 3.8+** installed, along with the required dependencies.
+Ensure you have **Python 3.8+** installed and all required dependencies.
 
-### Clone the repository
+### Clone the Repository
 ```bash
 git clone https://github.com/NASO7Y/RAG-PDF-Search.git
 cd RAG-PDF-Search
 ```
 
-### Install dependencies
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the application
+### Run the Application
 ```bash
 streamlit run RAG.py
 ```
 
 ## 🏢 Tech Stack
 - **Python** (Core development language)
-- **Streamlit** (User interface)
+- **Streamlit** (User interface framework)
 - **LangChain** (AI-powered retrieval and processing)
-- **Ollama & DeepSeek R1** (Natural language processing)
-- **FAISS** (Efficient vector-based search)
+- **Ollama & DeepSeek R1** (Natural language processing models)
+- **FAISS** (Fast vector-based search)
 - **HuggingFace Embeddings** (Semantic text embeddings)
-- **PDFPlumber** (PDF document parsing)
+- **PDFPlumber** (PDF document processing)
 
 ## 📌 How It Works
-1. **Upload a PDF file** through the interface.
-2. The application **processes and embeds** the text using HuggingFace embeddings.
-3. Queries are matched to **relevant document sections** using FAISS retrieval.
-4. **Ollama & DeepSeek R1** generate a concise, context-aware response.
+1. **Upload a PDF file** via the Streamlit interface.
+2. The application **extracts, processes, and embeds** the text using HuggingFace embeddings.
+3. Queries are matched to **relevant document segments** using FAISS-based retrieval.
+4. **Ollama & DeepSeek R1** generate a precise, context-aware response.
 5. The results are displayed in a **user-friendly Streamlit UI**.
 
 ## 🤝 Contributions
-Any contributions are welcome, Feel free to fork the repository, submit issues, or create pull requests.
+We welcome all contributions! Feel free to fork the repository, submit issues, or create pull requests.
 
 ## 📬 Contact
-For questions or feedback, feel free to open an issue or reach out to me:
+For any questions or feedback, feel free to reach out:
 
 - **GitHub:** [NASO7Y](https://github.com/NASO7Y)
 - **Email:** ahmed.noshy2004@gmail.com
 - **LinkedIn:** [Ahmed Noshy](https://www.linkedin.com/in/nos7y/)
+
 
 ---
 ⭐ If you find this project helpful, consider giving it a star is support😂🌹
