@@ -17,7 +17,7 @@ Ensure you have **Python 3.8+** installed, along with the required dependencies.
 
 ### Clone the repository
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/RAG-PDF-Search.git
+git clone https://github.com/NASO7Y/RAG-PDF-Search.git
 cd RAG-PDF-Search
 ```
 
