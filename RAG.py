@@ -1,6 +1,6 @@
 import streamlit as st
 import io
-from arabic_support import support_arabic_text
+# from arabic_support import support_arabic_text
 from langchain_community.document_loaders import PDFPlumberLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -12,7 +12,8 @@ from langchain_core.runnables import RunnablePassthrough
 
 # Set up the app interface
 st.set_page_config(page_title="Search PDF with Ollama & DeepSeek", layout="wide")
-support_arabic_text(all=True)
+
+# support_arabic_text(all=True)
 
 st.title("Search within a PDF using Ollama and DeepSeek")
 
