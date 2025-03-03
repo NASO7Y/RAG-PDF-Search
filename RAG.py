@@ -1,6 +1,6 @@
 import streamlit as st
 import io
-# from arabic_support import support_arabic_text
+import tempfile  # Import tempfile module
 from langchain_community.document_loaders import PDFPlumberLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -12,9 +12,6 @@ from langchain_core.runnables import RunnablePassthrough
 
 # Set up the app interface
 st.set_page_config(page_title="Search PDF with Ollama & DeepSeek", layout="wide")
-
-# support_arabic_text(all=True)
-
 st.title("Search within a PDF using Ollama and DeepSeek")
 
 # Upload PDF file
@@ -22,9 +19,13 @@ uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
 
 if uploaded_file is not None:
     with st.spinner("Processing PDF..."):
-        # Load the PDF directly from memory (avoid unnecessary disk writes)
-        pdf_bytes = io.BytesIO(uploaded_file.getvalue())
-        loader = PDFPlumberLoader(pdf_bytes)
+        # Save PDF to a temporary file
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_pdf:
+            temp_pdf.write(uploaded_file.getvalue())
+            temp_pdf_path = temp_pdf.name
+
+        # Load PDF from the temporary file
+        loader = PDFPlumberLoader(temp_pdf_path)
         docs = loader.load()
 
         # Check if document is empty
