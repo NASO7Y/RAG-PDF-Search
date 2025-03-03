@@ -1,8 +1,9 @@
 streamlit
+arabic-support
 langchain
 langchain-community
+langchain-huggingface
 langchain-experimental
-faiss-cpu
-ollama
 sentence-transformers
-pdfplumber
+langchain-ollama
+faiss-cpu
